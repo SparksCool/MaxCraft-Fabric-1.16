@@ -6,13 +6,15 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class MaxCraft implements ModInitializer {
 
-	public static final Block MONEY = new Block(FabricBlockSettings.of(Material.WOOL).strength(4.0f));
+	public static final Block MONEY = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5f));
+	public static final Item DOLLAR = new Item(new FabricItemSettings().group(ItemGroup.MISC));
 
 
 	@Override
@@ -23,6 +25,7 @@ public class MaxCraft implements ModInitializer {
 		System.out.println("Maxcraft is initializing!");
 		Registry.register(Registry.BLOCK, new Identifier("maxcraft","money_block"), MONEY);
 		Registry.register(Registry.ITEM, new Identifier("maxcraft","money_block"), new BlockItem(MONEY, new FabricItemSettings().group(ItemGroup.MISC)));
+		Registry.register(Registry.ITEM, new Identifier("maxcraft","money_item"), DOLLAR);
 
 
 		System.out.println("Maxcraft has intialized!");
