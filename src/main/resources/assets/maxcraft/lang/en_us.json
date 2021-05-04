@@ -1,4 +1,6 @@
 {
     "block.maxcraft.money_block":"Money",
-    "item.maxcraft.money_item":"Dollar"
+    "item.maxcraft.money_item":"Dollar",
+    "item.maxcraft.skooma_potion":"Skooma",
+    "item.maxcraft.skooma_sugar":"Moonsugar"
 }

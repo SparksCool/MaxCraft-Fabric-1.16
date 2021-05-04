@@ -17,9 +17,8 @@ import net.minecraft.world.World;
 
 public class genericPotion extends Item {
     public StatusEffect Effect;
-    public genericPotion(Settings settings, StatusEffect SEI){
+    public genericPotion(Settings settings){
         super(settings);
-        Effect = SEI;
         
     }
     @Override
@@ -31,12 +30,4 @@ public class genericPotion extends Item {
         return getDrinkSound();
     }
 
-    @Override
-    public ItemStack finishUsing(ItemStack stack, World world, LivingEntity user) {
-        PlayerEntity playerEntity = user instanceof PlayerEntity ? (PlayerEntity)user : null;
-        user.addStatusEffect(new StatusEffectInstance(Effect, 200, 3));
-        playerEntity.addExperience(2);
-
-        return stack;
-    }
 }

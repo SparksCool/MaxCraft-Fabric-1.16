@@ -1,0 +1,14 @@
+{
+"type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "maxcraft:skooma_sugar"
+  },
+  {
+    "item": "minecraft:glass_bottle"
+  }
+],
+"result": {
+  "item": "maxcraft:skooma_potion"
+}
+}
