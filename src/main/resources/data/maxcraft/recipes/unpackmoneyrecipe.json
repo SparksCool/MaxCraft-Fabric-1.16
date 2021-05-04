@@ -1,0 +1,12 @@
+{
+"type": "minecraft:crafting_shapeless",
+"ingredients": [
+  {
+    "item": "maxcraft:money_block"
+  }
+],
+"result": {
+  "item": "maxcraft:money_item",
+  "count": 9
+}
+}

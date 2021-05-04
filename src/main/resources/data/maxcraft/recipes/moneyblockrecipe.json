@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "xxx",
+        "xxx",
+        "xxx"
+    ],
+    "key":
+    {
+        "x":
+        {
+            "item": "maxcraft:money_item"
+        }
+    },
+    "result":
+    {
+        "item": "maxcraft:money_block",
+        "count": 1
+    }
+}
