@@ -5,6 +5,7 @@ An experimental mod for testing my ideas in minecraft
   Skooma: A custom made potion with a custom recipe
   
   Moonsugar: a ingredient made for making skooma
+  
   Money&Dollar: some blocks and items i made
   
 # Future Plans
