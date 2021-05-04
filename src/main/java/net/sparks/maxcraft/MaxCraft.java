@@ -9,6 +9,7 @@ import net.minecraft.entity.effect.StatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.potion.Potion;
@@ -20,7 +21,8 @@ public class MaxCraft implements ModInitializer {
 
 	public static final Block MONEY = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5f));
 	public static final Item DOLLAR = new Item(new FabricItemSettings().group(ItemGroup.MISC));
-	public static final genericPotion SKOOMA = new genericPotion(new FabricItemSettings().group(ItemGroup.MISC));
+	public static final genericPotion SKOOMA = new genericPotion(new Item.Settings().group(ItemGroup.FOOD).maxCount(128).food(new FoodComponent.Builder()
+																.saturationModifier(1.0f).hunger(4).build()), StatusEffects.SPEED);
 
 
 	@Override
