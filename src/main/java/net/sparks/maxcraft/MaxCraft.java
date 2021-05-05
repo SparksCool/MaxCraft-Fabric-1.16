@@ -19,6 +19,7 @@ public class MaxCraft implements ModInitializer {
 
 	//registering blocks
 	public static final Block MONEY = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5f));
+	public static final Block SCRATE = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5f));
 	//registering items
 	public static final Item DOLLAR = new Item(new FabricItemSettings().group(ItemGroup.MISC));
 	public static final Item MSUGAR = new Item(new FabricItemSettings().group(ItemGroup.MISC));
@@ -35,7 +36,10 @@ public class MaxCraft implements ModInitializer {
 		// Proceed with mild caution.
 		System.out.println("Maxcraft is initializing!");
 		Registry.register(Registry.BLOCK, new Identifier("maxcraft","money_block"), MONEY);
+		Registry.register(Registry.BLOCK, new Identifier("maxcraft","skooma_block"), SCRATE);
+		System.out.println("Maxcraft is initializing items!");
 		Registry.register(Registry.ITEM, new Identifier("maxcraft","money_block"), new BlockItem(MONEY, new FabricItemSettings().group(ItemGroup.MISC)));
+		Registry.register(Registry.ITEM, new Identifier("maxcraft","skooma_block"), new BlockItem(SCRATE, new FabricItemSettings().group(ItemGroup.MISC)));
 		Registry.register(Registry.ITEM, new Identifier("maxcraft","money_item"), DOLLAR);
 		Registry.register(Registry.ITEM, new Identifier("maxcraft","skooma_potion"), SKOOMA);
 		Registry.register(Registry.ITEM, new Identifier("maxcraft","skooma_sugar"), MSUGAR);

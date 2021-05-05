@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/orientable",
+    "textures": {
+        "top": "maxcraft:block/cratetop",
+        "front": "maxcraft:block/crateside",
+        "side": "maxcraft:block/crateside"
+    }
+ }
