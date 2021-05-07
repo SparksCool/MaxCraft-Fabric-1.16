@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern":
+    [
+        "xxx",
+        "xxx",
+        "xxx"
+    ],
+    "key":
+    {
+        "x":
+        {
+            "item": "maxcraft:skooma_potion"
+        }
+    },
+    "result":
+    {
+        "item": "maxcraft:skooma_block",
+        "count": 1
+    }
+}
