@@ -1,6 +1,9 @@
 {
     "block.maxcraft.money_block":"Money",
+    "block.maxcraft.distil_block":"Distillery",
+    "block.maxcraft.skooma_block":"Crate of Skooma",
     "item.maxcraft.money_item":"Dollar",
     "item.maxcraft.skooma_potion":"Skooma",
+    "itemGroup.maxcraft.menu":"MaxCraft",
     "item.maxcraft.skooma_sugar":"Moonsugar"
 }
