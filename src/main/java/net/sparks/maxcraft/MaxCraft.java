@@ -11,6 +11,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.sparks.maxcraft.potions.genericPotion;
@@ -18,8 +19,9 @@ import net.sparks.maxcraft.potions.genericPotion;
 public class MaxCraft implements ModInitializer {
 
 	//registering blocks
-	public static final Block MONEY = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5f));
-	public static final Block SCRATE = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5f));
+	public static final Block MONEY = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5f).sounds(BlockSoundGroup.WOOL));
+	public static final Block SCRATE = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5f).sounds(BlockSoundGroup.WOOD));
+	public static final Block DISTIL = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.7f).sounds(BlockSoundGroup.METAL));
 	//registering items
 	public static final Item DOLLAR = new Item(new FabricItemSettings().group(ItemGroup.MISC));
 	public static final Item MSUGAR = new Item(new FabricItemSettings().group(ItemGroup.MISC));
