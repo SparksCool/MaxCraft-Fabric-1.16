@@ -25,7 +25,7 @@ public class MaxCraft implements ModInitializer {
 	//registering blocks
 	public static final Block MONEY = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5f).sounds(BlockSoundGroup.WOOL));
 	public static final Block SCRATE = new Block(FabricBlockSettings.of(Material.WOOL).strength(0.5f).sounds(BlockSoundGroup.SCAFFOLDING));
-	public static final machineBlock DISTIL = (machineBlock) new Block(FabricBlockSettings.of(Material.WOOL).strength(0.7f).sounds(BlockSoundGroup.METAL));
+	public static final machineBlock DISTIL = new machineBlock(FabricBlockSettings.of(Material.WOOL).strength(0.7f).sounds(BlockSoundGroup.METAL));
 	//registering items
 	public static final Item DOLLAR = new Item(new FabricItemSettings());
 	public static final Item MSUGAR = new Item(new FabricItemSettings());

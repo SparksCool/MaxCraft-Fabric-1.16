@@ -1,5 +1,8 @@
 {
     "variants": {
-      "": { "model": "maxcraft:block/distil_block" }
-    }
+        "facing=north": { "model": "maxcraft:block/distil_block" },
+        "facing=east":  { "model": "maxcraft:block/distil_block", "y":  90},
+        "facing=south": { "model": "maxcraft:block/distil_block", "y": 180 },
+        "facing=west":  { "model": "maxcraft:block/distil_block", "y": 270 }
+      }
   }
