@@ -30,7 +30,7 @@ public class MaxCraft implements ModInitializer {
 	public static final Item DOLLAR = new Item(new FabricItemSettings());
 	public static final Item MSUGAR = new Item(new FabricItemSettings());
 	//registering potions
-	public static final genericPotion SKOOMA = new genericPotion(new Item.Settings().group(ItemGroup.FOOD).maxCount(128).food(new FoodComponent.Builder()
+	public static final genericPotion SKOOMA = new genericPotion(new Item.Settings().maxCount(128).food(new FoodComponent.Builder()
 																.saturationModifier(1.0f).hunger(8).alwaysEdible()
 																.statusEffect(new StatusEffectInstance(StatusEffects.SPEED, 20*30, 2), 1).build()));
 	
